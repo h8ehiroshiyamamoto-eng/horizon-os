@@ -1,0 +1,12 @@
+{
+  "name": "H&E HIBO HORIZON OS",
+  "short_name": "HORIZON",
+  "description": "THINK / ACT / NAVIGATION を統合する H&E HORIZON OS",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#030811",
+  "theme_color": "#07111f",
+  "orientation": "portrait-primary",
+  "lang": "ja-JP"
+}
