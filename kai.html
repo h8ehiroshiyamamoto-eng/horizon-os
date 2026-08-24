@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#061322">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>KAI ACT CONSOLE</title>
+<style>
+:root{--gold:#d4af37;--blue:#67bcff;--white:#f5f7fa;--muted:#7ea6c3}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;min-height:100%;background:radial-gradient(circle at 50% 12%,#0c2940 0%,#081525 40%,#030913 100%);color:var(--white);font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif}body{padding:calc(env(safe-area-inset-top) + 18px) 18px calc(env(safe-area-inset-bottom) + 28px)}.shell{max-width:520px;margin:0 auto}.top{display:flex;justify-content:space-between;align-items:center}.back{text-decoration:none;color:var(--gold);font-size:10px;font-weight:700;letter-spacing:1px}.state{color:#6aaee0;font-size:8px;letter-spacing:2px}.header{text-align:center;margin:26px 0 18px}.brand{color:var(--gold);font-size:10px;font-weight:700;letter-spacing:5px}.title{margin-top:9px;font-family:Georgia,"Times New Roman",serif;font-size:29px;letter-spacing:3px}.sub{margin-top:8px;color:#82afd0;font-size:9px;letter-spacing:3px}.hero{text-align:center;margin:22px 0}.orbit{position:relative;width:176px;height:176px;margin:0 auto;border:1px solid rgba(103,188,255,.25);border-radius:50%;box-shadow:0 0 40px rgba(62,167,255,.14),inset 0 0 28px rgba(103,188,255,.05);display:flex;align-items:flex-end;justify-content:center}.orbit:before{content:"";position:absolute;inset:21px;border:1px solid rgba(103,188,255,.14);border-radius:50%}.hero-img{position:relative;z-index:2;width:148px;height:162px;object-fit:contain;object-position:bottom center;filter:drop-shadow(0 10px 18px rgba(0,0,0,.45))}.fallback{position:absolute;inset:0;display:grid;place-items:center;font-family:Georgia,"Times New Roman",serif;font-size:56px;color:var(--blue);text-shadow:0 0 24px rgba(62,167,255,.38)}.hero-name{margin-top:10px;font-family:Georgia,"Times New Roman",serif;font-size:26px;color:var(--blue)}.role{margin-top:4px;color:var(--muted);font-size:8px;letter-spacing:2px}.philosophy{text-align:center;margin:14px 0 20px;color:#d8bc75;font-family:Georgia,"Times New Roman",serif;font-size:14px;letter-spacing:1.4px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:11px}.card{display:block;text-decoration:none;color:inherit;border-radius:21px;padding:16px;min-height:148px;background:linear-gradient(145deg,rgba(18,67,103,.76),rgba(8,19,36,.95));border:1px solid rgba(65,166,255,.56)}.card:active{transform:scale(.985)}.card-top{display:flex;justify-content:space-between}.label{color:#a8b1c0;font-size:8px;letter-spacing:1.4px}.symbol{color:var(--blue);font-size:15px}.name{margin-top:9px;font-family:Georgia,"Times New Roman",serif;font-size:23px;color:var(--blue)}.desc{margin-top:8px;color:#a0aabd;font-size:10px;line-height:1.6}.action{margin-top:12px;color:#fff;font-size:9px;font-weight:700;letter-spacing:1px}.footer{text-align:center;margin-top:20px;color:#526f84;font-size:8px;letter-spacing:2px}@media(max-width:380px){.card{padding:14px}.name{font-size:21px}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <div class="top"><a class="back" href="./index.html">← HORIZON CORE</a><div class="state">ACT MODE · READY</div></div>
+  <header class="header"><div class="brand">H&E</div><div class="title">KAI ACT CONSOLE</div><div class="sub">CONNECT · EXECUTE · ADVANCE</div></header>
+  <section class="hero"><div class="orbit"><div id="fallback" class="fallback">K</div><img class="hero-img" src="./assets/Kai_ACT_official.png" alt="Kai" onload="document.getElementById('fallback').style.display='none'" onerror="this.style.display='none'"></div><div class="hero-name">Kai</div><div class="role">ACT NAVIGATOR</div></section>
+  <div class="philosophy">行動を、前進に変える。</div>
+  <section class="grid">
+    <a class="card" href="shortcuts://run-shortcut?name=HORIZON-TASK"><div class="card-top"><div class="label">EXECUTE MODULE</div><div class="symbol">▶</div></div><div class="name">TASK</div><div class="desc">Todoistを開き、次に実行するタスクへ進む</div><div class="action">START TASK →</div></a>
+    <a class="card" href="shortcuts://run-shortcut?name=HORIZON-PLAN"><div class="card-top"><div class="label">TIME MODULE</div><div class="symbol">◷</div></div><div class="name">PLAN</div><div class="desc">Calendarを開き、行動する時間を確保する</div><div class="action">OPEN PLAN →</div></a>
+    <a class="card" href="shortcuts://run-shortcut?name=NODE-COM"><div class="card-top"><div class="label">CONNECT MODULE</div><div class="symbol">◇</div></div><div class="name">COM</div><div class="desc">Slack / Chatwork などへ接続し、人を動かす</div><div class="action">NODE-COM →</div></a>
+    <a class="card" href="shortcuts://run-shortcut?name=NODE-CALL"><div class="card-top"><div class="label">CALL MODULE</div><div class="symbol">◇</div></div><div class="name">CALL</div><div class="desc">通常電話 / Rakuten Link からすぐ通話する</div><div class="action">NODE-CALL →</div></a>
+  </section>
+  <div class="footer">KAI · ACT CONSOLE · PWA</div>
+</main>
+</body>
+</html>
